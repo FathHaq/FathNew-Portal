@@ -100,7 +100,7 @@ export default function Dashboard(props) {
                     </div>
                 </div>
                 <div className="p-5">
-                    {props.myNews > 0 ? (
+                    {props.myNews && props.myNews.length > 0 ? (
                         props.myNews.map((news, i) => {
                             return (
                                 <div
